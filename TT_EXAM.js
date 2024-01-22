@@ -1,57 +1,33 @@
-
-function myFunction() {
-    var x = document.getElementById("nav-menu-top");
-    if (x.className === "menu-center") {
-      x.className += " responsive";
-    } else {
-      x.className = "menu-center";
-    }
-    document.querySelectorAll('.menu-top a').forEach(function (item) {
-        item.addEventListener('click', function () {
-            var x = document.getElementById("nav-menu-top");
-            x.className = "menu-center";
-        });
-    });
-  }
-
-
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector("#nav-menu-top").addEventListener("click", function (event) {
         event.preventDefault();
-        let targetId = event.target.getAttribute("href").substring(1);
-        let targetElement = document.getElementById(targetId);
+        let merk_href = event.target.getAttribute("href").substring(1);
+        let merk_elem = document.getElementById(merk_href);
 
-        if (targetElement) {
-            let headerHeight = document.querySelector("nav").offsetHeight;
-            let elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-            let offsetPosition = elementPosition - headerHeight;
+        if (merk_elem) {
+            let nav_izm = document.querySelector("nav").offsetHeight;
+            let elem_poz = merk_elem.getBoundingClientRect().top + window.scrollY;
+            let beig_poz = elem_poz - nav_izm;
 
             window.scrollTo({
-                top: offsetPosition,
+                top: beig_poz,
                 behavior: "smooth"
             });
 
-            if (targetId === "sakums") {
-                targetElement.style.marginTop = 0;
+            if (merk_href === "sakums") {
+                mark_elem.style.marginTop = 0;
             }
             else {
-                targetElement.style.marginTop = 20 + "px";
+                mark_elem.style.marginTop = 20 + "px";
             }
         }
     });
 });
 
-
-
 window.addEventListener('DOMContentLoaded', (event) => {
-
     check.onclick = function() {
         var password = document.getElementById('password').value;
         var login = document.getElementById('login').value;
-
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-
         if ((password === "lu1234567") && (/^[a-z]{2}\d{5}$/.test(login))) {
             document.getElementById('list').style.display = "flex";
             document.querySelector('.info-login-true').style.display = "none";
@@ -83,121 +59,116 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    function getSelectValue(e){
-        let selectedValue = e.target.value;
-        
-        if (selectedValue === "os") {
-            document.querySelector('.table-oper, .table-aup').style.display = "flex";
+    function tab_atvr(elem){
+        let izvel = elem.target.value;
+        if (izvel === "os") {
             document.querySelector('.table-oper').style.display = "flex";
             document.querySelector('.table-aup').style.display = "none";
-            
         }
 
-        if (selectedValue === "aup") {
-            document.querySelector('.table-oper, .table-aup').style.display = "flex";
+        if (izvel === "aup") {
             document.querySelector('.table-oper').style.display = "none";
             document.querySelector('.table-aup').style.display = "flex";
         }
 
-        if (selectedValue === "none") {
+        if (izvel === "none") {
             document.querySelector('.table-oper, .table-aup').style.display = "none";
             document.querySelector('.table-oper').style.display = "none";
             document.querySelector('.table-aup').style.display = "none";
         }
-      }
-      
-      const list = document.getElementById('list');
-      
-    list.addEventListener('change', function(e) {  
-    getSelectValue(e)
-    });
-    
-    submit.onclick = function() {
-        if (/[^a-zA-Z0-9]/.test(name)) {
-            document.querySelector('.name-true').style.display = "flex";
-        }
     }
-
+      
+    const list = document.getElementById('list'); 
+    list.addEventListener('change', function(elem) {  
+        tab_atvr(elem)
+    });
 });
 
 function passShow() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-      x.type = "text";
+    var pass = document.getElementById("password");
+    if (pass.type === "password") {
+      pass.type = "text";
     } 
     else {
-      x.type = "password";
+      pass.type = "password";
     }
 }
 
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
-    let currentSlide = 0;
-    const slides = document.querySelectorAll(".slideshow img");
-    const totalSlides = slides.length;
-    const indicatorsContainer = document.getElementById("indicators");
-    const textContainer = document.getElementById("text");
-    let intervalId;
+    let tagad_slide = 0;
+    const slides_mas = document.querySelectorAll(".slideshow img");
+    const kopa_slides = slides_mas.length;
+    const indicatorCont = document.getElementById("indicators");
+    const textCont = document.getElementById("text");
+    let interval;
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
+    function slide_att(index) {
+        slides_mas.forEach((slide, i) => {
             slide.style.display = i === index ? "block" : "none";
         }); 
-        updateIndicators(index);
-        updateText(index);
+        indicators_upd(index);
+        text_upd(index);
     }
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        showSlide(currentSlide);
+    function nak_slide() {
+        tagad_slide = (tagad_slide + 1) % kopa_slides;
+        slide_att(tagad_slide);
     }
 
-    function updateIndicators(index) {
-        const indicators = Array.from(indicatorsContainer.children);
+    function indicators_upd(index) {
+        const indicators = Array.from(indicatorCont.children);
         indicators.forEach((indicator, i) => {
             indicator.classList.toggle("active", i === index);
         });
     }
 
 
-    function updateText(index) {
-        const newCaption = slides[index].alt;
-        textContainer.style.animation = "none";
-        textContainer.offsetHeight; /* Освежение элемента */
-        textContainer.style.animation = null;
-        textContainer.style.animation = "fadeInOut 1s ease-in-out";
-        textContainer.textContent = newCaption;
+    function text_upd(index) {
+        const newSub = slides_mas[index].alt;
+        textCont.style.animation = "none";
+        textCont.offsetHeight;
+        textCont.style.animation = null;
+        textCont.style.animation = "fadeInOut 1s ease-in-out";
+        textCont.textContent = newSub;
     }
 
 
-    function createIndicators() {
-        for (let i = 0; i < totalSlides; i++) {
+    function Indic() {
+        for (let i = 0; i < kopa_slides; i++) {
             const indicator = document.createElement("div");
             indicator.classList.add("indicator");
             indicator.addEventListener("click", () => {
-                clearInterval(intervalId); // Очищаем интервал перед установкой нового слайда
-                currentSlide = i;
-                showSlide(currentSlide);
-                startInterval();
+                clearInterval(interval);
+                tagad_slide = i;
+                slide_att(tagad_slide);
+                interval_start();
             });
-            indicatorsContainer.appendChild(indicator);
+            indicatorCont.appendChild(indicator);
         }
-        indicatorsContainer.children[0].classList.add("active");
+        indicatorCont.children[0].classList.add("active");
     }
 
-    function startInterval() {
-        intervalId = setInterval(nextSlide, 3000);
+    function interval_start() {
+        interval = setInterval(nak_slide, 3000);
     }
 
-    // Начать слайд-шоу с первого слайда
-    showSlide(currentSlide);
+    slide_att(tagad_slide);
 
-    // Запустить слайд-шоу с интервалом в 3 секунды (3000 миллисекунд)
-    startInterval();
-
-    // Создать индикаторы
-    createIndicators();
-
+    interval_start();
+    Indic();
 });
+
+function mobileNav() {
+    var mob_nav = document.getElementById("nav-menu-top");
+    if (mob_nav.className === "menu-center") {
+        mob_nav.className += " responsive";
+    } else {
+        mob_nav.className = "menu-center";
+    }
+    document.querySelectorAll('.menu-top a').forEach(function (item) {
+        item.addEventListener('click', function () {
+            var mob_nav = document.getElementById("nav-menu-top");
+            mob_nav.className = "menu-center";
+        });
+    });
+}
