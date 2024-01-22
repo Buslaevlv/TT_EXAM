@@ -15,7 +15,6 @@ body {
     top: 0px;
 }
 
-
 nav {
     z-index: 1;
     display: flex;
@@ -28,16 +27,13 @@ nav {
     top: 0px;
 }
 
-section.top {
+.top {
     padding-top: 1px;
 }
-
 
 .menu-top {
     list-style-type: none;
     justify-content: center;
-
-
 }
 
 .menu {
@@ -60,7 +56,6 @@ section.top {
     color: #003bc6; 
 }
 
-
 .menu a:hover {
     color:  rgb(130, 169, 228);
 }
@@ -79,23 +74,18 @@ section.top {
 
 #nav-menu-top .icon {
     display: none
-  }
-
-
-
-
+}
 
 main {  
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 
 .card-start {
     display: flex;
-    margin-top: 100px;
+    margin-top: 110px;
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 20px;
@@ -109,7 +99,6 @@ main {
     text-transform: uppercase;
     font-size: 35px;
     color: #003bc6; 
-
 }
 
 .card-nav {
@@ -161,18 +150,14 @@ main {
 .about-text {
     text-align: center;
     font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     color: #003bc6;
     display: flex;
     align-items: center;
 }
 
-
-
-
-
-
-
-section#pass-check {
+#pass-check {
     padding-top: 25px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -192,7 +177,6 @@ section#pass-check {
     margin-right: 40px;
     background-color: rgb(220, 233, 250);
     border-radius: 15px;
-
 }
 
 .card-mat-opt {
@@ -206,8 +190,7 @@ section#pass-check {
 .card-mat-prez {
     margin-top: 40px;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;  
 }
 
 
@@ -219,12 +202,6 @@ section#pass-check {
     display: none;
 }
 
-
-
-
-
-
-
 #list {
     display: none;
     text-align: center;
@@ -234,7 +211,6 @@ section#pass-check {
     margin-bottom: 20px;
     border: 2px inset black;
 }
-
 
 input, button, textarea {
     border-radius: 5px;
@@ -262,7 +238,7 @@ table, th, td {
     border-radius: 5px;
 }
 
-label[for="checkbox"] {
+label[for="showpass"] {
     text-transform: none;
 }
 
@@ -290,8 +266,6 @@ input[type="checkbox"] {
     padding-top: 15px;
 }
 
-
-
 .card-saz li, a {
     font-size: 30px;
     color: #003bc6; 
@@ -318,7 +292,6 @@ form {
 #showpass:hover {
     opacity: 60%;
 }
-
 
 .nav-fin {
     display: block;
@@ -412,7 +385,6 @@ form {
     color: #003bc6; 
 }
 
-
   .card-photo {
     display: flex;
     margin-top: -25px;
@@ -421,10 +393,6 @@ form {
     background-color: rgb(220, 233, 250);
     border-radius: 15px;
 }
-
-
-
-
 
 .slideshow {
     overflow: hidden;
@@ -439,20 +407,19 @@ form {
     display: none;
     margin-top: 20px;
     border-radius: 5px;
-
 }
 
-  .fade img, .fade {
+.fade img, .fade {
     animation-name: fade;
     animation-duration: 1s;
-  }
+}
   
-  @keyframes fade {
+@keyframes fade {
     from {opacity: .1} 
     to {opacity: 1}
-  }
+}
 
-  @keyframes fadeInOut {
+@keyframes fadeInOut {
     0% {
         opacity: 0;
     }
@@ -462,25 +429,22 @@ form {
     100% {
         opacity: 1;
     }
-  }
+}
 
-
-  .text {
+.text {
     text-align: center;
     justify-content: center;
     left: 50%;
     font-size: 30px;
     color: #003bc6; 
-    transition: opacitys 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
     transform: translateX(-50%);
     position: relative;
-    animation: fadeInOut 1s ease-in-out;
     margin-bottom: 40px;
     display: flex;
-
 }
 
-  .indicators {
+.indicators {
     position: relative;
     bottom: 20px;
     left: 50%;
@@ -503,103 +467,15 @@ form {
     background-color: #717171;
 }
 
-@media screen and (max-width: 900px) {
-
-
-    .card-img1, .card-img2 {
-        width: 90%;
-        max-width: 500px;
-        float:none;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    .card-about {
-        display: block;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .about-text {
-        margin-top: -20px;
-        margin-bottom: -20px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .card-nav h1 {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    section#pass-check {
-        padding-bottom: 0px;
-    }
-
-    .card-mat,
-    .card-mat-pass,
-    .card-mat-opt,
-    .card-mat-prez {
-        display: block;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .card-mat-prez {
-        margin-top: 10px;
-        padding-bottom: 20px;
-    }
-
-    .card-mat {
-        margin-left: 20px;
-        margin-right: 20px;
-
-    }
-
-    .info-login-true, .info-pass-true {
-        margin-top: 0px;
-        margin-left: 20px;
-    }
-
-    .table-oper,
-    .table-aup {
-        display: none;
-        padding: 20px;
-        padding-bottom: 0px;
-
-    }
-
-    #list {
-        display: none;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 0px;
-    }
-
-}
-
-@media screen and (max-width: 500px) {
-    select {
-        max-width: 330px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    input {
-        margin-right: 20px;
-    }
-}
-
 @media screen and (max-width: 1310px) {
     nav {
-        height: 81px; /* Adjust the height if needed */
+        height: 81px;
     }
 
     .menu-top {
         display: none;
-        margin-top: 90px; /* Adjust the margin-top if needed */
-        width: 100%; /* Set the width to 100% */
+        margin-top: 90px;
+        width: 100%;
         padding-top: 20px;
         position: absolute;
         top: 0;
@@ -613,18 +489,13 @@ form {
 
         text-decoration: none;
         margin-top: -10px;
-
-
     }
 
     .menu-top li {
         background-color: white;
         text-align: left;
         margin-left: 5px;
-        
     }
-
-
 
     .menu-top.responsive {
         position: absolute;
@@ -639,7 +510,6 @@ form {
     }
 
     #img-logo {
-
         max-width: 300px;
         position: absolute;
         left: 0;
@@ -676,6 +546,103 @@ form {
         font-size: 30px;
         cursor: pointer;
         color: #003bc6;
+    }
+}
 
+@media screen and (max-width: 900px) {
+    .card-img1, .card-img2 {
+        width: 90%;
+        max-width: 500px;
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-about {
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about-text {
+        margin-top: -20px;
+        margin-bottom: -20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card-nav h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #pass-check {
+        padding-bottom: 0px;
+    }
+
+    .card-mat, .card-mat-pass, .card-mat-opt, .card-mat-prez {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card-mat-prez {
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .card-mat {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .info-login-true, .info-pass-true {
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .table-oper, .table-aup {
+        display: none;
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+
+    #list {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    select {
+        max-width: 330px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input {
+        margin-right: 20px;
+    }
+}
+
+@media print {
+    #nav-menu-top, .card-start a, .card-mat-pass, .info-login-true p, .info-pass-true p, #galerija, .card-photo, form, .card-saz li:last-child, .card-img1, .card-img2 {
+        display: none;
+    }
+    nav {
+        position: absolute;
+    }
+
+    #list {
+        margin-top: -40px;
+    }
+    .card-nav {
+        margin-top: -10px;
+    }
+
+    table {
+        margin-left: 20px;
     }
 }
