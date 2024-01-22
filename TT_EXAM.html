@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="TT_EXAM.js"></script>
-    <link rel="stylesheet" href="TT_EXAM.css" />
-    <title>Mizniks.lv</title>
-</head>
-<body>
-    <header>
-        <section class="top" id="sakums">
-            <nav>
-                <div id="logo" class="left" >
-                    <a href=""><img id="img-logo" src="TT_EXAM_PHOTO/TT_EXAM_LOGO.png" alt="Mizniks logo"></a>
-                </div>
-                <div id="nav-menu-top" class="menu-center">
-                    <ul class="menu-top">
-                        <li class="menu"><a class="active" href='#sakums'>Sākums</a></li>
-                        <li class="menu"><a href="#studentiem">Studentiem</a></li>
-                        <li class="menu"><a href="#materiali">Materiāli</a></li>
-                        <li class="menu"><a href="#galerija">Galerija</a></li>
-                        <li class="menu" id="saz"><a href="#sazina">Saziņa</a></li>
-                    </ul>
-                    <a href="javascript:void(0);" style="font-size:40px;" class="icon" onclick="myFunction()">&#9776;</a>
-                </div>
-            </nav>
-        </section>
+<html lang="lv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="TT_EXAM.js"></script>
+        <link rel="stylesheet" href="TT_EXAM.css">
+        <title>Mizniks.lv</title>
+    </head>
+    <body>
+        <header>
+            <div class="top" id="sakums">
+                <nav>
+                    <div id="logo" class="left" >
+                        <a href=""><img id="img-logo" src="TT_EXAM_PHOTO/TT_EXAM_LOGO.png" alt="Mizniks logo"></a>
+                    </div>
+
+                    <div id="nav-menu-top" class="menu-center">
+                        <ul class="menu-top">
+                            <li class="menu"><a class="active" href='#sakums'>Sākums</a></li>
+                            <li class="menu"><a href="#studentiem">Studentiem</a></li>
+                            <li class="menu"><a href="#materiali">Materiāli</a></li>
+                            <li class="menu"><a href="#galerija">Galerija</a></li>
+                            <li class="menu" id="saz"><a href="#sazina">Saziņa</a></li>
+                        </ul>
+                        <a href="javascript:void(0);" style="font-size:40px;" class="icon" onclick="mobileNav()">&#9776;</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main>
             <div class ="card-start">
                 <marquee behavior="scroll" scrollamount="20" direction="left"> <a>Sveiks! Tā ir Latvijas Universitātes pasniedzēja <u>Ilvara Miznika</u> mājaslapa, kas veidota Latvijas Universitātes studentiem.</a></marquee>
@@ -47,20 +49,19 @@
 
             <div class="card-mat">
                 <div class="card-mat-pass">
-
-                    <section id="pass-check">
+                    <div id="pass-check">
                         <div id="form">
                             <label for="login">Lietotājvārds:</label><br>
                             <input type="text" id="login" name="login" placeholder="xx12345"><br><br>
                             <label for="password">Parole:</label><br>
                             <input type="password" id="password" name="password"><br><br>
-                            <label for="checkbox">Rādīt paroli:</label>
+                            <label for="showpass">Rādīt paroli:</label>
                             <input type="checkbox" id="showpass" onclick="passShow()"><br><br>
                             <button id="check">Pārbaudīt</button><br>
                         </div>
-                    </section>
+                    </div>
                 </div>          
-                
+                    
                 <div class="info-login-true">
                     <p>Nepareizs lietotājvārda formāts!</p>
                 </div>                  
@@ -76,7 +77,7 @@
                         <option value="os">Operētājsistēmas</option>
                         <option value="aup">Algoritmi un programmēšana</option>
                     </select>
-                <div class="table-oper">
+                    <div class="table-oper">
                         <br>
                         <table>
                             <tr>
@@ -88,157 +89,155 @@
                             </tr>
                             <tr>
                                 <th>1.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-01a-Ievads un prasibas kursam.ppt">OS-01a-Ievads un prasibas kursam</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-01a-Ievads_un_prasibas_kursam.ppt">OS-01a-Ievads un prasibas kursam</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-01b-Isa OS vesture.ppt">OS-01b-Isa OS vesture</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-01b-Isa_OS_vesture.ppt">OS-01b-Isa OS vesture</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-01c-Windows instalesana.ppt">OS-01c-Windows instalesana</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-01c-Windows_instalesana.ppt">OS-01c-Windows instalesana</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>2.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-02a-Draiveru instalesana.ppt">OS-02a-Draiveru instalesana</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-02a-Draiveru_instalesana.ppt">OS-02a-Draiveru instalesana</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-02b-Programmu instalesana.ppt">OS-02b-Programmu instalesana</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-02b-Programmu_instalesana.ppt">OS-02b-Programmu instalesana</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-02c-Programmas OS drosibai.ppt">OS-02c-Programmas OS drosibai</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-02c-Programmas_OS_drosibai.ppt">OS-02c-Programmas OS drosibai</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>3.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-03a-Programmas rezidenti.ppt">OS-03a-Programmas rezidenti</a>
+                                    <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-03a-Programmas_rezidenti.ppt">OS-03a-Programmas rezidenti</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-03b-Failu sistemas.ppt">OS-03b-Failu sistemas</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-03b-Failu_sistemas.ppt">OS-03b-Failu sistemas</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-03c-Cieto disku dalisana.ppt">OS-03c-Cieto disku dalisana</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-03c-Cieto_disku_dalisana.ppt">OS-03c-Cieto disku dalisana</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>4.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-04a-Sistema RAID.ppt">OS-04a-Sistema RAID</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-04a-Sistema_RAID.ppt">OS-04a-Sistema RAID</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-04b-Datora BIOS .ppt">OS-04b-Datora BIOS</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-04b-Datora_BIOS.ppt">OS-04b-Datora BIOS</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-04c-Cieto disku apkope.ppt">OS-04c-Cieto disku apkope</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-04c-Cieto_disku_apkope.ppt">OS-04c-Cieto disku apkope</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>5.</th>
                                 <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-05a-Emulatori.ppt">OS-05a-Emulatori</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-05b-OS avarijas un to labosana .ppt">OS-05b-OS avarijas un to labosana</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-05b-OS_avarijas_un_to_labosana.ppt">OS-05b-OS avarijas un to labosana</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-05c-OS atminas parvaldiba.ppt">OS-05c-OS atminas parvaldiba</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-05c-OS_atminas_parvaldiba.ppt">OS-05c-OS atminas parvaldiba</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>6.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-06a-Datora attala vadiba.ppt">OS-06a-Datora attala vadiba</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-06a-Datora_attala_vadiba.ppt">OS-06a-Datora attala vadiba</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-06b-Windows registri.ppt">OS-06b-Windows registri</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-06b-Windows_registri.ppt">OS-06b-Windows registri</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-06c-Energijas taupisana.ppt">OS-06c-Energijas taupisana</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-06c-Energijas_taupisana.ppt">OS-06c-Energijas taupisana</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>7.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-07a-Lietotaju konti.ppt">OS-07a-Lietotaju konti</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-07a-Lietotaju_konti.ppt">OS-07a-Lietotaju konti</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-07b-Pieeja failiem un mapem.ppt">OS-07b-Pieeja failiem un mapem</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-07b-Pieeja_failiem_un_mapem.ppt">OS-07b-Pieeja failiem un mapem</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-07c-Failu ipasibas.ppt">OS-07c-Failu ipasibas</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-07c-Failu_ipasibas.ppt">OS-07c-Failu ipasibas</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-07d-Windows notikumi.ppt">OS-07d-Windows notikumi</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-07d-Windows_notikumi.ppt">OS-07d-Windows notikumi</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>8.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08a-Iespaidi pēc MD1 2023.ppt">OS-08a-Iespaidi pēc MD1 2023</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08a-Iespaidi_pēc_MD1_2023.ppt">OS-08a-Iespaidi pēc MD1 2023</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08b-Datorspeles - 3D Action.ppt">OS-08b-Datorspeles - 3D Action</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08b-Datorspeles-3D_Action.ppt">OS-08b-Datorspeles - 3D Action</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08c-Datorspeles - Kosmoss.ppt">OS-08c-Datorspeles - Kosmoss</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08c-Datorspeles-Kosmoss.ppt">OS-08c-Datorspeles - Kosmoss</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08d-Datorspeles - Atklata pasaule.ppt">OS-08d-Datorspeles - Atklata pasaule</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08d-Datorspeles-Atklata_pasaule.ppt">OS-08d-Datorspeles - Atklata pasaule</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08e-Datorspeles - Strategijas.ppt">OS-08e-Datorspeles - Strategijas</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08e-Datorspeles-Strategijas.ppt">OS-08e-Datorspeles - Strategijas</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08f-Datorspeles - Adventure.ppt">OS-08f-Datorspeles - Adventure</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-08f-Datorspeles-Adventure.ppt">OS-08f-Datorspeles - Adventure</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>9.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-09a-Krasas, krasu modeli.ppt">OS-09a-Krasas, krasu modeli</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-09a-Krasas,_krasu_modeli.ppt">OS-09a-Krasas, krasu modeli</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-09b-Krasu sintezes veidi.ppt">OS-09b-Krasu sintezes veidi</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-09b-Krasu_sintezes_veidi.ppt">OS-09b-Krasu sintezes veidi</a>
                                 </td>
                             </tr>
-
                             <tr>
                                 <th>10.</th>
                                 <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-10a-Skana.ppt">OS-10a-Skana</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-10b-Daudzkanalu skana.ppt">OS-10b-Daudzkanalu skana</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-10b-Daudzkanalu_skana.ppt">OS-10b-Daudzkanalu skana</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>11.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-11a -Informacijas kompresija bez zudumiem.ppt">OS-11a -Informacijas kompresija bez zudumiem</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-11a-Informacijas_kompresija_bez_zudumiem.ppt">OS-11a -Informacijas kompresija bez zudumiem</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-11b -Informacijas kompresija ar zudumiem.ppt">OS-11b -Informacijas kompresija ar zudumiem</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-11b-Informacijas_kompresija_ar_zudumiem.ppt">OS-11b -Informacijas kompresija ar zudumiem</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>12.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-12a-Grafisko failu formati.ppt">OS-12a-Grafisko failu formati</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-12a-Grafisko_failu_formati.ppt">OS-12a-Grafisko failu formati</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-12b-Video failu formati.ppt">OS-12b-Video failu formati</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-12b-Video_failu_formati.ppt">OS-12b-Video failu formati</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-12c-Foto kameras un montaza.ppt">OS-12c-Foto kameras un montaza</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-12c-Foto_kameras_un_montaza.ppt">OS-12c-Foto kameras un montaza</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-12d-Video kameras.ppt">OS-12d-Video kameras</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-12d-Video_kameras.ppt">OS-12d-Video kameras</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-12e-Video kartes.ppt">OS-12e-Video kartes</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-12e-Video_kartes.ppt">OS-12e-Video kartes</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>13.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-13a-Linux vesture un distributivi.ppt">OS-13a-Linux vesture un distributivi</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-13a-Linux_vesture_un_distributivi.ppt">OS-13a-Linux vesture un distributivi</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-13b-Linux instalesana un lietosana.ppt">OS-13b-Linux instalesana un lietosana</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-13b-Linux_instalesana_un_lietosana.ppt">OS-13b-Linux instalesana un lietosana</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-13c-Datoru un OS vesture ASV.ppt">OS-13c-Datoru un OS vesture ASV</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-13c-Datoru_un_OS_vesture_ASV.ppt">OS-13c-Datoru un OS vesture ASV</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>14.</th>
                                 <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-14a-MacOS.pptx">OS-14a-MacOS</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-14b-Mobilas OS.ppt">OS-14b-Mobilas OS</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-14b-Mobilas_OS.ppt">OS-14b-Mobilas OS</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-14c-Chrome OSFlex.pptx">OS-14c-Chrome OSFlex</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-14c-Chrome_OSFlex.pptx">OS-14c-Chrome OSFlex</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-14d-Korejas RedStarOS.pptx">OS-14d-Korejas RedStarOS</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-14d-Korejas_RedStarOS.pptx">OS-14d-Korejas RedStarOS</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>15.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-15a-Datoru un OS vesture Eiropa.ppt">OS-15a-Datoru un OS vesture Eiropa</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-15a-Datoru_un_OS_vesture_Eiropa.ppt">OS-15a-Datoru un OS vesture Eiropa</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-15b-Datoru un OS vesture PSRS.ppt">OS-15b-Datoru un OS vesture PSRS</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-15b-Datoru_un_OS_vesture_PSRS.ppt">OS-15b-Datoru un OS vesture PSRS</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-15c-Datoru un OS vesture Baltija.ppt">OS-15c-Datoru un OS vesture Baltija</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/OS-15c-Datoru_un_OS_vesture_Baltija.ppt">OS-15c-Datoru un OS vesture Baltija</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>MD</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/Lielais majas darbs - Windows.docx">Lielais majas darbs - Windows</a>
-                                    <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/Lielais majas darbs - Linux.docx">Lielais majas darbs - Linux</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/Lielais_majas_darbs-Windows.docx">Lielais majas darbs - Windows</a>
+                                <br>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_OS/Lielais_majas_darbs-Linux.docx">Lielais majas darbs - Linux</a>
                                 </td>
                             </tr>
                         </table>
-        
                     </div>
 
                     <div class="table-aup">
@@ -252,133 +251,122 @@
                             </tr>
                             <tr>
                                 <th>1.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/1.tema AlgProg ievada lekcija.pptx">1.tema AlgProg ievada lekcija</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/1.tema_AlgProg_ievada_lekcija.pptx">1.tema AlgProg ievada lekcija</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/2.tema AlgProg operators if vs.ppt">2.tema AlgProg operators if vs</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/2.tema_AlgProg_operators_if_vs.ppt">2.tema AlgProg operators if vs</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/3.tema AlgProg nejausie skaitli vs.ppt">3.tema AlgProg nejausie skaitli vs</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/3.tema_AlgProg_nejausie_skaitli_vs.ppt">3.tema AlgProg nejausie skaitli vs</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/4.tema AlgProg operators while vs.ppt">4.tema AlgProg operators while vs</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/4.tema_AlgProg_operators_while_vs.ppt">4.tema AlgProg operators while vs</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>2.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/5.tema AlgProg divi for paklaji vs.ppt">5.tema AlgProg divi for paklaji vs</a></td>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/5.tema_AlgProg_divi_for_paklaji_vs.ppt">5.tema AlgProg divi for paklaji vs</a></td>
                             </tr>
                             <tr>
                                 <th>3.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/6.tema AlgProg for un skaitli vs.ppt">6.tema AlgProg for un skaitli vs</a></td>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/6.tema_AlgProg_for_un_skaitli_vs.ppt">6.tema AlgProg for un skaitli vs</a></td>
                             </tr>
                             <tr>
                                 <th>4.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/7.tema AlgProg masivi vs.ppt">7.tema AlgProg masivi vs</a></td>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/7.tema_AlgProg_masivi_vs.ppt">7.tema AlgProg masivi vs</a></td>
                             </tr>
                             <tr>
                                 <th>5.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/8.tema AlgProg funkcijas1 vs.ppt">8.tema AlgProg funkcijas1 vs</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/8.tema_AlgProg_funkcijas1_vs.ppt">8.tema AlgProg funkcijas1 vs</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/9.tema AlgProg funkcijas2 vs.ppt">9.tema AlgProg funkcijas2 vs</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/9.tema_AlgProg_funkcijas2_vs.ppt">9.tema AlgProg funkcijas2 vs</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>6.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/10.tema AlgProg lieli nejausie skaitli vs.ppt">10.tema AlgProg lieli nejausie skaitli vs</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/10.tema_AlgProg_lieli_nejausie_skaitli_vs.ppt">10.tema AlgProg lieli nejausie skaitli vs</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/11.tema AlgProg dinamiski masivi1 vs.ppt">11.tema AlgProg dinamiski masivi1 vs</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/11.tema_AlgProg_dinamiski_masivi1_vs.ppt">11.tema AlgProg dinamiski masivi1 vs</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>7.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/12.tema AlgProg dinamiski masivi2 vs.ppt">12.tema AlgProg dinamiski masivi2 vs</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/12.tema_AlgProg_dinamiski_masivi2_vs.ppt">12.tema AlgProg dinamiski masivi2 vs</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/13.tema AlgProg cietoksnis nep.ppt">13.tema AlgProg cietoksnis nep</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/13.tema_AlgProg_cietoksnis_nep.ppt">13.tema AlgProg cietoksnis nep</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/14.tema AlgProg simbolu virknes vs.ppt">14.tema AlgProg simbolu virknes vs</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/14.tema_AlgProg_simbolu_virknes_vs.ppt">14.tema AlgProg simbolu virknes vs</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/15.tema AlgProg simboli 2D masiva vs.ppt">15.tema AlgProg simboli 2D masiva vs</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/15.tema_AlgProg_simboli_2D_masiva_vs.ppt">15.tema AlgProg simboli 2D masiva vs</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>8.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/16.tema AlgProg OOP klases vs.ppt">16.tema AlgProg OOP klases vs</a></td>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/16.tema_AlgProg_OOP_klases_vs.ppt">16.tema AlgProg OOP klases vs</a></td>
                             </tr>
                             <tr>
                                 <th>9.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/17.tema AlgProg OOP stils vs.ppt">17.tema AlgProg OOP stils vs</a></td>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/17.tema_AlgProg_OOP_stils_vs.ppt">17.tema AlgProg OOP stils vs</a></td>
                             </tr>
-
                             <tr>
                                 <th>10.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/18.tema AlgProg OOP cetrsturis vs.ppt">18.tema AlgProg OOP cetrsturis vs</a>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/18.tema_AlgProg_OOP_cetrsturis_vs.ppt">18.tema AlgProg OOP cetrsturis vs</a>
                                     <br>
-                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/19.tema AlgProg OOP konstruktors vs.ppt">19.tema AlgProg OOP konstruktors vs</a>
+                                    <a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/19.tema_AlgProg_OOP_konstruktors_vs.ppt">19.tema AlgProg OOP konstruktors vs</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>11.</th>
-                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/20.tema AlgProg OOP din masivi vs.ppt">20.tema AlgProg OOP din masivi vs</a></td>
+                                <td><a href="TT_EXAM_DATES/TT_EXAM_DATES_AUP/20.tema_AlgProg_OOP_din_masivi_vs.ppt">20.tema AlgProg OOP din masivi vs</a></td>
                             </tr>
                         </table>
                     </div>
                 </div>
             </div>
-        
-
-
-
-        <div class="card-nav" id="galerija">
-            <h1>Galerija</h1>
-        </div>
-
-        <div class="card-photo">
-            <div class="slideshow fade">
-
-                <img src="TT_EXAM_PHOTO/TT_EXAM_LU1.jpg" alt="LU Galvenā ēka">
-                <img src="TT_EXAM_PHOTO/TT_EXAM_LU2.jpg" alt="LU Dabas māja">
-                <img src="TT_EXAM_PHOTO/TT_EXAM_LU3.jpg" alt="LU Dabas mājas &quot;MAGNUM&quot; auditorija">
-                <img src="TT_EXAM_PHOTO/TT_EXAM_LU4.jpg" alt="LU Zinātņu māja">
-                <img src="TT_EXAM_PHOTO/TT_EXAM_LU5.jpg" alt="LU Zinātņu mājas &quot;ALFA&quot; auditorija">
-
-                <!-- <div class="arrow prev" onclick="prevSlide()">❮=</div>
-                <div class="arrow next" onclick="nextSlide()">❯=</div> -->
-
-
-                <br>
-                <div class="text" id="text"></div>
-                <div class="indicators fade" id="indicators"></div>
             
+            <div class="card-nav" id="galerija">
+                <h1>Galerija</h1>
             </div>
-        </div>
 
+            <div class="card-photo">
+                <div class="slideshow fade">
+                    <img src="TT_EXAM_PHOTO/TT_EXAM_LU1.jpg" alt="LU Galvenā ēka">
+                    <img src="TT_EXAM_PHOTO/TT_EXAM_LU2.jpg" alt="LU Dabas māja">
+                    <img src="TT_EXAM_PHOTO/TT_EXAM_LU3.jpg" alt="LU Dabas mājas &quot;MAGNUM&quot; auditorija">
+                    <img src="TT_EXAM_PHOTO/TT_EXAM_LU4.jpg" alt="LU Zinātņu māja">
+                    <img src="TT_EXAM_PHOTO/TT_EXAM_LU5.jpg" alt="LU Zinātņu mājas &quot;ALFA&quot; auditorija">
+                    <br>
+                    <div class="text" id="text"></div>
+                    <div class="indicators fade" id="indicators"></div>
+                </div>
+            </div>
 
+            <div class="card-nav" id="sazina">
+                <h1>Saziņa</h1>
+            </div>
 
-        <div class="card-nav" id="sazina">
-            <h1>Saziņa</h1>
-        </div>
+            <footer class="card-saz">
+                <ul>
+                    <li>E-pasts: <a href="mailto:ilvars.mizniks@lu.lv">ilvars.mizniks@lu.lv</a></li>
+                    <li>Telefons: <a href="tel:+37126459932">+371 26459932</a></li>
+                    <li>LU mājaslapa: <a href="https://lu.lv/" target="_blank">LU</a> </li>
+                    <li>Vairāk informācijas par kursiem: <a href="https://estudijas.lu.lv/" target="_blank">Estudijas</a></li>
+                    <li>Noderīga informācija arī: <a href="https://luis.lu.lv/" target="_blank">LUIS</a></li>
+                    <li>Uzrakstiet man:</li>
+                </ul>
 
+                <form action="https://www.w3schools.com/action_page.php">
+                    <label for="name">Vārds:</label><br>
+                    <input type="text" id="name" name="name" autocomplete="on" required pattern="[a-zA-Z0-9]+"><br><br>
+                    <label for="email">E-pasts:</label><br>
+                    <input type="email" id="email" name="email" autocomplete="on"><br><br>
+                    <label for="comment">Ziņa:</label><br>
+                    <textarea name="comment" id="comment" cols="21" rows="3"></textarea><br><br>
+                    <input type="submit" id="submit" value="Atsūtīt">
+                </form>
 
-        <footer class="card-saz">
-            <ul>
-                <li>E-pasts: <a href="mailto:ilvars.mizniks@lu.lv">ilvars.mizniks@lu.lv</a></li>
-                <li>Telefons: <a href="tel:+37126459932">+371 26459932</a></li>
-                <li>LU mājaslapa: <a href="https://lu.lv/" target="_blank">LU</a> </li>
-                <li>Vairāk informācijas par kursiem: <a href="https://estudijas.lu.lv/" target="_blank">Estudijas</a></li>
-                <li>Noderīga informācija arī: <a href="https://luis.lu.lv/" target="_blank">LUIS</a></li>
-                <li>Uzrakstiet man:</li>
-            </ul>
-            <form action="https://www.w3schools.com/action_page.php">
-                <label for="name">Vārds:</label><br>
-                <input type="text" id="name" name="name" required pattern="[a-zA-Z0-9]+"><br><br>
-                <label for="email">E-pasts:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="message">Ziņa:</label><br>
-                <textarea name="comment" cols="21" rows="3"></textarea><br><br>
-                <input type="submit" id="submit" value="Atsūtīt">
-              </form>
-        </footer>
-        <div class="nav-fin">
-            <h1><a href="https://www.youtube.com/watch?v=HLj_VKhqGPw" target="_blank">© Aleksandrs Buslajevs, 2024</a> <a href="https://www.lu.lv/" target="_blank"><img src="TT_EXAM_PHOTO/TT_EXAM_LOGO2.png" class="lu-logo" alt="Latvijas Universitāte"></a></h1>
-        </div>
-    </main>
-</body>
+            </footer>
+            
+            <div class="nav-fin">
+                <h1><a href="https://www.youtube.com/watch?v=HLj_VKhqGPw" target="_blank">© Aleksandrs Buslajevs, 2024</a> <a href="https://www.lu.lv/" target="_blank"><img src="TT_EXAM_PHOTO/TT_EXAM_LU_LOGO.png" class="lu-logo" alt="Latvijas Universitāte"></a></h1>
+            </div>
+        </main>
+    </body>
 </html>
