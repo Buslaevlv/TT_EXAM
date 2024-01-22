@@ -1,3 +1,20 @@
+
+function myFunction() {
+    var x = document.getElementById("nav-menu-top");
+    if (x.className === "menu-center") {
+      x.className += " responsive";
+    } else {
+      x.className = "menu-center";
+    }
+    document.querySelectorAll('.menu-top a').forEach(function (item) {
+        item.addEventListener('click', function () {
+            var x = document.getElementById("nav-menu-top");
+            x.className = "menu-center";
+        });
+    });
+  }
+
+
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector("#nav-menu-top").addEventListener("click", function (event) {
         event.preventDefault();
