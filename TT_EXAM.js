@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             if (merk_href === "sakums") {
-                mark_elem.style.marginTop = 0;
+                merk_elem.style.marginTop = 0;
             }
             else {
-                mark_elem.style.marginTop = 20 + "px";
+                merk_elem.style.marginTop = 20 + "px";
             }
         }
     });
