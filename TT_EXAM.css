@@ -7,7 +7,6 @@
 body {
     background-color: #A2DAFF;
     width: 100%;
-
     display: flex;
     margin-left: 0px;
     margin-right: 0px;
@@ -26,8 +25,7 @@ nav {
     width: 100%;
     position: fixed;
     padding-top: 10px;
-    top: 0%;
-
+    top: 0px;
 }
 
 section.top {
@@ -38,13 +36,17 @@ section.top {
 .menu-top {
     list-style-type: none;
     justify-content: center;
-    margin-left: -1120px;
-    margin-right: 20px;
+
+
 }
 
 .menu {
     float: left;
-    padding-left: 30px;
+    margin-right: 30px;
+}
+
+.menu:last-child {
+    margin-right: 20px;
 }
 
 .menu a {
@@ -58,9 +60,6 @@ section.top {
     color: #003bc6; 
 }
 
-.menu.has-sub-menu a {
-    position: relative;
-}
 
 .menu a:hover {
     color:  rgb(130, 169, 228);
@@ -71,9 +70,20 @@ section.top {
 }
 
 #img-logo {
-    width: 24%;
+    width: 300px;
     margin-left: 20px;
+    height: auto;
+    margin-right: -40px;
 }
+
+
+#nav-menu-top .icon {
+    display: none
+  }
+
+
+
+
 
 main {  
     display: block;
@@ -578,5 +588,94 @@ form {
 @media screen and (max-width: 400px) {
     input {
         margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    nav {
+        height: 81px; /* Adjust the height if needed */
+    }
+
+    .menu-top {
+        display: none;
+        margin-top: 90px; /* Adjust the margin-top if needed */
+        width: 100%; /* Set the width to 100% */
+        padding-top: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+        text-align: left;
+    }
+
+    #nav-menu-top .icon {
+
+        text-decoration: none;
+        margin-top: -10px;
+
+
+    }
+
+    .menu-top li {
+        background-color: white;
+        text-align: left;
+        margin-left: 5px;
+        
+    }
+
+
+
+    .menu-top.responsive {
+        position: absolute;
+        width: 100%;
+        min-width: 0;
+    }
+
+    #nav-menu-top.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 28px;
+    }
+
+    #img-logo {
+
+        max-width: 300px;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+
+    .menu-top a {
+        display: block;
+        text-decoration: none;
+        color: #003bc6;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: left;
+        margin-right: 90px;
+        padding-bottom: 10px;
+    }
+    
+    .menu-top li:not(:last-of-type) a {
+        border-bottom: solid 3px #003bc6;
+    }
+
+    #nav-menu-top.responsive .menu-top li {
+        display: block;
+        width: 100%;
+    }
+
+    #nav-menu-top.responsive .menu-top {
+        display: block;
+    }
+
+    #nav-menu-top .icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #003bc6;
+
     }
 }
